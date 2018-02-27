@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<HTML>
+<head>
+    <title>Student assignment grades</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" type="text/css" href="studentGrades.css">
+    <script type="text/javascript" src="studentGrades.js">
+    </script>
+</head>
+<body>
+<div class="w3-container">
+    <h1>
+        CS230 Laboratory Assignment Lab 3
+    </h1>
+</div>
+
+<table id="assignmentTable" class="tg" onkeyup="getAvg()">
+
+    <tr>
+        <th class="tg-yw4l">Name</th>
+        <th class="tg-yw4l">ID</th>
+        <th class="tg-yw4l">Assignment<br />1</th>
+        <th class="tg-yw4l">Assignment<br />2</th>
+        <th class="tg-yw4l">Assignment<br />3</th>
+        <th class="tg-yw4l">Assignment<br />4</th>
+        <th class="tg-yw4l">Assignment<br />5</th>
+        <th class="tg-yw4l">Final Grade</th>
+    </tr>
+    <tr>
+        <td class="tg-yw4l tg-text" contenteditable="true">Travis Willingham</td>
+        <td class="tg-yw4l tg-text" contenteditable="true">98666222</td>
+        <td class="tg-yw4l tg-num" contenteditable="true">-</td>
+        <td class="tg-yw4l tg-num" contenteditable="true">-</td>
+        <td class="tg-yw4l tg-num" contenteditable="true">-</td>
+        <td class="tg-yw4l tg-num" contenteditable="true">-</td>
+        <td class="tg-yw4l tg-num" contenteditable="true">-</td>
+        <td class="tg-yw4l tg-num"></td>
+    </tr>
+    <tr>
+        <td class="tg-yw4l tg-text" contenteditable="true">Taliesin Jaffe</td>
+        <td class="tg-yw4l tg-text" contenteditable="true">46556458</td>
+        <td class="tg-yw4l tg-num" contenteditable="true">-</td>
+        <td class="tg-yw4l tg-num" contenteditable="true">-</td>
+        <td class="tg-yw4l tg-num" contenteditable="true">-</td>
+        <td class="tg-yw4l tg-num" contenteditable="true">-</td>
+        <td class="tg-yw4l tg-num" contenteditable="true">-</td>
+        <td class="tg-yw4l tg-num"></td>
+    </tr>
+    <tr>
+        <td class="tg-yw4l tg-text" contenteditable="true">Liam O'Brien</td>
+        <td class="tg-yw4l tg-text" contenteditable="true">15445621</td>
+        <td class="tg-yw4l tg-num" contenteditable="true">-</td>
+        <td class="tg-yw4l tg-num" contenteditable="true">-</td>
+        <td class="tg-yw4l tg-num" contenteditable="true">-</td>
+        <td class="tg-yw4l tg-num" contenteditable="true">-</td>
+        <td class="tg-yw4l tg-num" contenteditable="true">-</td>
+        <td class="tg-yw4l tg-num"></td>
+    </tr>
+    <tr>
+        <td class="tg-yw4l tg-text" contenteditable="true">Marisha Ray</td>
+        <td class="tg-yw4l tg-text" contenteditable="true">15456321</td>
+        <td class="tg-yw4l tg-num" contenteditable="true">-</td>
+        <td class="tg-yw4l tg-num" contenteditable="true">-</td>
+        <td class="tg-yw4l tg-num" contenteditable="true">-</td>
+        <td class="tg-yw4l tg-num" contenteditable="true">-</td>
+        <td class="tg-yw4l tg-num" contenteditable="true">-</td>
+        <td class="tg-yw4l tg-num"></td>
+    </tr>
+    <tr>
+        <td class="tg-yw4l tg-text" contenteditable="true">Matthew Mercer</td>
+        <td class="tg-yw4l tg-text" contenteditable="true">45332125</td>
+        <td class="tg-yw4l tg-num" contenteditable="true">-</td>
+        <td class="tg-yw4l tg-num" contenteditable="true">-</td>
+        <td class="tg-yw4l tg-num" contenteditable="true">-</td>
+        <td class="tg-yw4l tg-num" contenteditable="true">-</td>
+        <td class="tg-yw4l tg-num" contenteditable="true">-</td>
+        <td class="tg-yw4l tg-num"></td>
+    </tr>
+    <tr>
+        <td class="tg-yw4l tg-text" contenteditable="true">Sam Riegel</td>
+        <td class="tg-yw4l tg-text" contenteditable="true">78492513</td>
+        <td class="tg-yw4l tg-num" contenteditable="true">-</td>
+        <td class="tg-yw4l tg-num" contenteditable="true">-</td>
+        <td class="tg-yw4l tg-num" contenteditable="true">-</td>
+        <td class="tg-yw4l tg-num" contenteditable="true">-</td>
+        <td class="tg-yw4l tg-num" contenteditable="true">-</td>
+        <td class="tg-yw4l tg-num"></td>
+    </tr>
+    <tr>
+        <td class="tg-yw4l tg-text" contenteditable="true">Laura Bailey</td>
+        <td class="tg-yw4l tg-text" contenteditable="true">12356486</td>
+        <td class="tg-yw4l tg-num" contenteditable="true">-</td>
+        <td class="tg-yw4l tg-num" contenteditable="true">-</td>
+        <td class="tg-yw4l tg-num" contenteditable="true">-</td>
+        <td class="tg-yw4l tg-num" contenteditable="true">-</td>
+        <td class="tg-yw4l tg-num" contenteditable="true">-</td>
+        <td class="tg-yw4l tg-num"></td>
+    </tr>
+    <tr>
+        <td class="tg-yw4l tg-text" contenteditable="true">Ashley Johnson</td>
+        <td class="tg-yw4l tg-text" contenteditable="true">16458356</td>
+        <td class="tg-yw4l tg-num" contenteditable="true">-</td>
+        <td class="tg-yw4l tg-num" contenteditable="true">-</td>
+        <td class="tg-yw4l tg-num" contenteditable="true">-</td>
+        <td class="tg-yw4l tg-num" contenteditable="true">-</td>
+        <td class="tg-yw4l tg-num" contenteditable="true">-</td>
+        <td class="tg-yw4l tg-num"></td>
+    </tr>
+    <tr>
+        <td class="tg-yw4l tg-text" contenteditable="true">Brian Foster</td>
+        <td class="tg-yw4l tg-text" contenteditable="true">76563156</td>
+        <td class="tg-yw4l tg-num" contenteditable="true">-</td>
+        <td class="tg-yw4l tg-num" contenteditable="true">-</td>
+        <td class="tg-yw4l tg-num" contenteditable="true">-</td>
+        <td class="tg-yw4l tg-num" contenteditable="true">-</td>
+        <td class="tg-yw4l tg-num" contenteditable="true">-</td>
+        <td class="tg-yw4l tg-num"></td>
+    </tr>
+    <tr>
+        <td class="tg-yw4l tg-text" contenteditable="true">Katie 'Sarah' Niamh</td>
+        <td class="tg-yw4l tg-text" contenteditable="true">46289753</td>
+        <td class="tg-yw4l tg-num" contenteditable="true">-</td>
+        <td class="tg-yw4l tg-num" contenteditable="true">-</td>
+        <td class="tg-yw4l tg-num" contenteditable="true">-</td>
+        <td class="tg-yw4l tg-num" contenteditable="true">-</td>
+        <td class="tg-yw4l tg-num" contenteditable="true">-</td>
+        <td class="tg-yw4l tg-num"></td>
+    </tr>
+</table>
+<div id="button-margin">
+    <button type="button" id="getAvg" class="btn" onclick="getAvg()">
+        Average grade
+    </button>
+</div>
+<div class="lower">
+    <h2>
+        Assignment submission details
+    </h2>
+    <p id="submit">No assignments have been submitted</p>
+
+
+    <h2>
+        CSV table
+    </h2>
+    <textarea id="csvTable" class="csvTable">
+
+    </textarea>
+</div>
+
+</body>
+</HTML>
